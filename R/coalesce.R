@@ -44,7 +44,7 @@ coalesce <- function(..., .ptype = NULL, .size = NULL) {
   args <- args[-1L]
 
   for (arg in args) {
-    is_na <- vec_equal_na(out)
+    is_na <- vec_detect_missing(out)
 
     if (!any(is_na)) {
       break
