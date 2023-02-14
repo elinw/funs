@@ -14,5 +14,5 @@
 #' df <- data.frame(x = c(NA, 2, 3), y = c(NA, NA, 3))
 #' is_na(df)
 is_na <- function(x) {
-  vec_equal_na(x)
+  vec_detect_missing(x)
 }
